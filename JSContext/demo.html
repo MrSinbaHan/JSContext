@@ -1,0 +1,34 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+    
+    function showAlert(){
+        alert('OC call JS with no argument');
+    }
+    function showAlertWithString(string){
+        alert(string);
+    }
+    
+    function callOCWithArgument() {
+        jsCallOCWithArgument('参数1 ','参数2 ','参数3');
+    }
+    </script>
+</head>
+<body>
+    
+    </br>
+    </br>
+    </br>
+    </br>
+    
+    <form>
+        
+        <button type='button' onclick='callOC()'>jsCallOC</button>
+
+        <button type='button' onclick='callOCWithArgument()'>jsCallOCWithArgument</button>
+
+    </form>
+
+</body>
+</html>
