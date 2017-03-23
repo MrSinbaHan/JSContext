@@ -27,12 +27,14 @@
     
     [_webView loadRequest: [NSURLRequest requestWithURL: htmlURL]];
 }
+
 - (IBAction)callJS:(id)sender {
     [_context evaluateScript:@"showAlert()"];
 }
 - (IBAction)callJSWithArguments:(id)sender {
     
     [_context evaluateScript:@"showAlertWithString('OC call JS with arguments')"];
+//    [_context[@"showAlertWithString"] callWithArguments:@[@"OC call JS with arguments"]];
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView
